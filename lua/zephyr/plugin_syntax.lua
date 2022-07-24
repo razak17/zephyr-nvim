@@ -132,7 +132,7 @@ return {
 	FloatermBorder = { fg = P.blue, bg = P.bg },
 
 	DiagnosticError = { fg = P.error_red },
-	DiagnosticWarning = { fg = P.dark_orange },
+	DiagnosticWarn = { fg = P.dark_orange },
 	DiagnosticInfo = { fg = P.blue },
 	DiagnosticHint = { fg = P.darker_green },
 
