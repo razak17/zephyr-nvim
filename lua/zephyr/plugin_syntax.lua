@@ -13,11 +13,6 @@ local function fade(color, amount)
 end
 
 return {
-	typescriptIdentifierName = { fg = P.blue },
-	typescriptObjectDestructure = { fg = P.blue },
-	typescriptTypeArguments = { fg = P.straw },
-	typescriptTypeReference = { fg = P.straw },
-	typescriptVariableDeclaration = { fg = P.straw },
 	-- Treesitter
 	TSFunction = { fg = P.blue },
 	TSComment = { fg = P.comment },
@@ -181,11 +176,11 @@ return {
 	CmpItemMenu = { fg = P.base5 },
 
 	-- nvim-notify
-	NotifyERRORTitle = { link = 'DiagnosticError'},
-	NotifyWARNTitle = { link = 'DiagnosticWarn'},
-	NotifyINFOTitle = { link = 'DiagnosticInfo'},
-	NotifyDEBUGTitle = { link = 'DiagnosticHint'},
-	NotifyTRACETitle = { link = 'DiagnosticHint'},
+	NotifyERRORTitle = { link = "DiagnosticError" },
+	NotifyWARNTitle = { link = "DiagnosticWarn" },
+	NotifyINFOTitle = { link = "DiagnosticInfo" },
+	NotifyDEBUGTitle = { link = "DiagnosticHint" },
+	NotifyTRACETitle = { link = "DiagnosticHint" },
 	NotifyERRORBody = { link = "NormalFloat" },
 	NotifyWARNBody = { link = "NormalFloat" },
 	NotifyINFOBody = { link = "NormalFloat" },
