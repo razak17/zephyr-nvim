@@ -1,6 +1,7 @@
 local P = require("zephyr.palette")
 local util = require("zephyr.utils")
 
+
 --- darkens a color
 ---@param color string
 ---@param amount? integer

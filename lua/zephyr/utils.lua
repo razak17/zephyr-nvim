@@ -87,7 +87,7 @@ end
 ---@param group string
 ---@param attribute string?
 ---@param fallback string?
----@return string
+---@return string | table
 function M.get(group, attribute, fallback)
 	if not group then
 		vim.notify("Cannot get a highlight without specifying a group", levels.ERROR)
@@ -115,7 +115,7 @@ function M.clear_hl(name)
 end
 
 ---Apply a list of highlights
----@param hls table<string, table<string, boolean|string>>
+ ---@param hls table<string, table<string, boolean|string|HLAttrs>>
 function M.all(hls)
 	for name, hl in pairs(hls) do
 		M.set_hl(name, hl)
