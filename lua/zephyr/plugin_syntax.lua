@@ -196,4 +196,7 @@ return {
 	NotifyINFOIcon = { link = "DiagnosticInfo" },
 	NotifyDEBUGIcon = { link = "DiagnosticHint" },
 	NotifyTRACEIcon = { link = "DiagnosticHint" },
+
+	CybuBorder = { link = "WinSeparator" },
+	CybuFocus = { bg = P.darker_blue, fg = P.base99 },
 }
