@@ -199,4 +199,6 @@ return {
 
 	CybuBorder = { link = "WinSeparator" },
 	CybuFocus = { bg = P.darker_blue, fg = P.base99 },
+
+	HarpoonBorder = { link = "WinSeparator" },
 }
