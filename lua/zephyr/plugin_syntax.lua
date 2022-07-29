@@ -111,7 +111,7 @@ return {
 	NeoTreeGitUntracked = { fg = P.sign_add },
 	NeoTreeHiddenByName = { fg = P.base5 },
 	NeoTreeCursorLine = { bg = P.dark },
-	NeoTreeTitleBar = { bg = P.darker_blue, fg = P.black },
+	NeoTreeTitleBar = { link = "Visual", bold = true },
 
 	TelescopeNormal = { fg = P.fg },
 	TelescopeBorder = { link = "WinSeparator" },
