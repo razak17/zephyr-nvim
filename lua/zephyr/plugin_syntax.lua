@@ -155,7 +155,7 @@ return {
 	WhichKey = { fg = P.pink },
 	WhichKeyName = { fg = P.yellow },
 	WhichKeyTrigger = { fg = P.black },
-	WhichKeySeperator = { fg = fade(P.yellowgreen, -80) },
+	WhichKeySeperator = { fg = P.yellowgreen },
 	WhichKeyFloat = { fg = P.red, bg = P.darker_bg },
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
