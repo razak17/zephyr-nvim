@@ -190,4 +190,8 @@ return {
 	CybuFocus = { bg = P.darker_blue, fg = P.base99 },
 
 	HarpoonBorder = { link = "WinSeparator" },
+
+	DapBreakpoint = { link = "DiagnosticError" },
+	DapBreakpointRejected = { link = "DiagnosticWarn" },
+	DapStopped = { link = "DiagnosticHint" },
 }
