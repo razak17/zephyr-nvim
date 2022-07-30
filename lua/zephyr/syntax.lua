@@ -1,16 +1,5 @@
 local P = require("zephyr.palette")
-local util = require("zephyr.utils")
-
---- darkens a color
----@param color string
----@param amount? integer
----@return string
-local function fade(color, amount)
-	if amount then
-		return util.alter_color(color, amount)
-	end
-	return util.alter_color(color, -20)
-end
+local fade = require("zephyr.utils").fade
 
 return {
 	-- Editor

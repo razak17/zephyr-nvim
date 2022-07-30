@@ -1,16 +1,5 @@
 local P = require("zephyr.palette")
-local util = require("zephyr.utils")
-
---- darkens a color
----@param color string
----@param amount? integer
----@return string
-local function fade(color, amount)
-	if amount then
-		return util.alter_color(color, amount)
-	end
-	return util.alter_color(color, -80)
-end
+local fade = require("zephyr.utils").fade
 
 return {
 	-- Treesitter
@@ -151,10 +140,10 @@ return {
 	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
 	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
 
-	DiagnosticVirtualTextError = { fg = P.error_red, bg = fade(P.pale_red) },
-	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = fade(P.dark_orange) },
-	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = fade(P.pale_blue) },
-	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = fade(P.darker_green) },
+	DiagnosticVirtualTextError = { fg = P.error_red, bg = fade(P.pale_red, -80) },
+	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = fade(P.dark_orange, -80) },
+	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = fade(P.pale_blue, -80) },
+	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = fade(P.darker_green, -80) },
 
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
@@ -166,8 +155,8 @@ return {
 	WhichKey = { fg = P.pink },
 	WhichKeyName = { fg = P.yellow },
 	WhichKeyTrigger = { fg = P.black },
+	WhichKeySeperator = { fg = fade(P.yellowgreen, -80) },
 	WhichKeyFloat = { fg = P.red, bg = P.darker_bg },
-	WhichKeySeperator = { fg = fade(P.yellowgreen, -20) },
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
 
