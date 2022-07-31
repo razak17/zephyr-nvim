@@ -28,15 +28,12 @@ local set_hl = function(tbl)
 end
 
 async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function()
-  local plugin_syntax = require("zephyr.plugin_syntax")
-
 	P.terminal_color()
-	set_hl(plugin_syntax)
 	async_load_plugin:close()
 end))
 
 function P.colorscheme()
-  local syntax = require("zephyr.syntax")
+  local theme = require("zephyr.theme")
 
 	vim.api.nvim_command("hi clear")
 	if vim.fn.exists("syntax_on") then
@@ -45,7 +42,7 @@ function P.colorscheme()
 	vim.o.background = "dark"
 	vim.o.termguicolors = true
 	vim.g.colors_name = "zephyr"
-	set_hl(syntax)
+	set_hl(theme)
 	async_load_plugin:send()
 end
 
