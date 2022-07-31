@@ -19,6 +19,14 @@ return {
 	WinbarCurrent = { fg = P.comment },
 	WinbarDirectory = { fg = P.comment },
 
+	-- highlight FIXME comments
+	commentTSWarning = { bg = P.teal, fg = P.base0, bold = true },
+	commentTSDanger = { bg = P.dark_green, fg = P.base0, bold = true },
+	commentTSNote = { bg = P.blue, fg = P.base0, bold = true },
+	CommentTasksTodo = { link = "commentTSWarning" },
+	CommentTasksFixme = { link = "commentTSDanger" },
+	CommentTasksNote = { link = "commentTSNote" },
+
 	vimCommentTitle = { fg = P.grey, bold = true },
 	vimLet = { fg = P.orange },
 	vimVar = { fg = P.cyan },
@@ -163,6 +171,7 @@ return {
 	-- nvim-cmp
 	CmpItemAbbrMatch = { fg = P.light_green },
 	CmpItemMenu = { fg = P.base5 },
+	Cmp = { fg = P.base5 },
 
 	-- nvim-notify
 	NotifyERRORTitle = { link = "DiagnosticError" },
@@ -194,4 +203,7 @@ return {
 	DapBreakpoint = { link = "DiagnosticError" },
 	DapBreakpointRejected = { link = "DiagnosticWarn" },
 	DapStopped = { link = "DiagnosticHint" },
+
+	Dim = { fg = P.base5 },
+	UfoFoldedEllipsis = { fg = P.base5 },
 }

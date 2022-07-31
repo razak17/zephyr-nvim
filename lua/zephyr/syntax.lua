@@ -4,6 +4,7 @@ local fade = require("zephyr.utils").fade
 return {
 	-- Editor
 	Normal = { fg = P.fg, bg = fade(P.bg) },
+	NormalFloat = { fg = P.pale_blue, bg = fade(P.bg) },
 	Terminal = { fg = P.fg, bg = P.bg },
 	SignColumn = { link = "Normal" },
 	FoldColumn = { fg = P.fg_alt, bg = P.black },
@@ -45,7 +46,6 @@ return {
 	StatusLine = { fg = P.base8, bg = P.base2 },
 	StatusLineNC = { fg = P.grey, bg = P.base2 },
 	Question = { fg = P.yellow },
-	NormalFloat = { fg = P.pale_blue, bg = fade(P.bg) },
 	Tabline = { fg = P.base6, bg = P.base2 },
 	TabLineSel = { bg = P.dark_alt },
 	SpellBad = { fg = P.error_red, bg = P.none, undercurl = true },
