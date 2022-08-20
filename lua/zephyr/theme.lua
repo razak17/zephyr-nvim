@@ -113,7 +113,7 @@ return {
 	Class = { fg = P.blue },
 	JsonFold = { fg = P.comment },
 
-  -- Plugins
+	-- Plugins
 	-- Treesitter
 	TSFunction = { fg = P.blue },
 	TSComment = { fg = P.comment },
@@ -319,4 +319,8 @@ return {
 	Dim = { fg = P.base5 },
 	UfoFoldedEllipsis = { fg = P.base5 },
 	SLCopilot = { fg = P.forest_green, bg = P.dark },
+
+	IlluminatedWordText = { bg = P.base4, underline = false },
+	IlluminatedWordRead = { bg = P.base4, underline = false },
+	IlluminatedWordWrite = { bg = P.base4, underline = false },
 }
