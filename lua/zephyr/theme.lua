@@ -67,7 +67,7 @@ return {
 	WinSeparator = { fg = P.darker_blue },
 	PanelBackground = { link = "Normal" },
 	PanelDarkBackground = { link = "PanelBackground" },
-	URL = { link = "WinSeparator" },
+	URL = { fg = P.brighter_blue, underline = true },
 
 	-- Lang
 	Boolean = { fg = P.orange },
