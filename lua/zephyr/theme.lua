@@ -68,6 +68,7 @@ return {
 	PanelBackground = { link = "Normal" },
 	PanelDarkBackground = { link = "PanelBackground" },
 	URL = { fg = P.brighter_blue, underline = true },
+	FloatBorder = { link = "WinSeparator" },
 
 	-- Lang
 	Boolean = { fg = P.orange },
@@ -203,7 +204,7 @@ return {
 	TroubleTextInformation = { fg = P.blue },
 	TroubleTextHint = { fg = P.teal },
 
-	BqfPreviewBorder = { link = "WinSeparator" },
+	BqfPreviewBorder = { link = "FloatBorder" },
 	BqfSign = { fg = P.red },
 	BqfPreviewRange = { fg = P.cyan },
 	BqfPreviewCursor = { fg = P.yellowgreen },
@@ -223,9 +224,9 @@ return {
 	NeoTreeTitleBar = { link = "Visual", bold = true },
 
 	TelescopeNormal = { fg = P.fg },
-	TelescopeBorder = { link = "WinSeparator" },
-	TelescopeResultsBorder = { link = "WinSeparator" },
-	TelescopePromptBorder = { link = "WinSeparator" },
+	TelescopeBorder = { link = "FloatBorder" },
+	TelescopeResultsBorder = { link = "FloatBorder" },
+	TelescopePromptBorder = { link = "FloatBorder" },
 	TelescopePreviewBorder = { fg = P.blue },
 	TelescopeMatching = { fg = P.cyan },
 	TelescopeSelection = { fg = P.light_green },
@@ -233,7 +234,7 @@ return {
 	TelescopeMultiSelection = { fg = P.light_green },
 	TelescopePromptPrefix = { fg = P.light_green },
 
-	FloatermBorder = { link = "WinSeparator" },
+	FloatermBorder = { link = "FloatBorder" },
 
 	DiagnosticError = { fg = P.error_red },
 	DiagnosticWarn = { fg = P.dark_orange },
@@ -307,10 +308,10 @@ return {
 	NotifyDEBUGIcon = { link = "DiagnosticHint" },
 	NotifyTRACEIcon = { link = "DiagnosticHint" },
 
-	CybuBorder = { link = "WinSeparator" },
+	CybuBorder = { link = "FloatBorder" },
 	CybuFocus = { bg = P.darker_blue, fg = P.base99 },
 
-	HarpoonBorder = { link = "WinSeparator" },
+	HarpoonBorder = { link = "FloatBorder" },
 
 	DapBreakpoint = { link = "DiagnosticError" },
 	DapBreakpointRejected = { link = "DiagnosticWarn" },
