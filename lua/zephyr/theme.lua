@@ -261,10 +261,10 @@ return {
 	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
 	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
 
-	DiagnosticVirtualTextError = { fg = P.error_red, bg = fade(P.pale_red, -80) },
-	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = fade(P.dark_orange, -80) },
-	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = fade(P.pale_blue, -80) },
-	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = fade(P.darker_green, -80) },
+	DiagnosticVirtualTextError = { fg = P.error_red, bg = fade(P.pale_red, -70) },
+	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = fade(P.dark_orange, -70) },
+	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = fade(P.pale_blue, -70) },
+	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = fade(P.darker_green, -70) },
 
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
