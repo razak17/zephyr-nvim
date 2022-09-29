@@ -53,7 +53,7 @@ return {
 	dark_green = "#98be65",
 	chartreuse = "#1DC123",
 	darker_green = "#98c379",
-  forest_green = "#6CC644",
+	forest_green = "#6CC644",
 
 	cc = "#96B8E0",
 	cyan = "#A5D6FF",
@@ -85,4 +85,6 @@ return {
 	diff_delete = "#572E33",
 	diff_change = "#273842",
 	dif_text = "#314753",
+
+	visual = "#9745be",
 }
