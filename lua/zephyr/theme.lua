@@ -220,8 +220,8 @@ return {
   NeoTreeGitModified = { fg = P.sign_change },
   NeoTreeGitUntracked = { fg = P.sign_add },
   NeoTreeHiddenByName = { fg = P.base5 },
-  NeoTreeCursorLine = { bg = P.dark },
-  NeoTreeTitleBar = { link = "Visual", bold = true },
+  -- NeoTreeCursorLine = { bg = P.dark },
+  -- NeoTreeTitleBar = { link = "Visual", bold = true },
 
   TelescopeNormal = { fg = P.fg },
   TelescopeBorder = { link = "FloatBorder" },
