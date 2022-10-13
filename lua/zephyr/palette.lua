@@ -14,6 +14,7 @@ return {
 	base00 = "#dedede",
 
 	bg = "#282a36",
+	darker_bg = "#1e2127",
 	comment = "#738091",
 	-- bg = "#504945",
 	alt_bg = "#282c34",

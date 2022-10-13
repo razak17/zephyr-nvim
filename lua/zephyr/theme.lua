@@ -3,7 +3,7 @@ local fade = require("zephyr.utils").fade
 
 return {
   -- Editor
-  Normal = { fg = P.fg, bg = fade(P.bg) },
+  Normal = { fg = P.fg, bg = fade(P.darker_bg) },
   NormalFloat = { fg = P.pale_blue, bg = fade(P.bg) },
   Terminal = { fg = P.fg, bg = P.bg },
   SignColumn = { link = "Normal" },
