@@ -59,7 +59,7 @@ return {
 	debugBreakpoint = { fg = P.bg, bg = P.red_alt },
 	-- Extra (Editor)
 	NormalNC = { fg = P.fg, bg = P.none },
-	MsgArea = { bg = fade(P.bg) },
+	MsgArea = { link = 'Normal' },
 	MsgSeparator = { fg = P.base6, bg = fade(P.bg) },
 	qfFileName = { fg = P.yellowgreen },
 	netrwDir = { fg = P.pink },
