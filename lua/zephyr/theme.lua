@@ -3,19 +3,19 @@ local fade = require("zephyr.utils").fade
 
 return {
 	-- Editor
-	Normal = { fg = P.fg, bg = fade(P.darker_bg) },
-	NormalFloat = { fg = P.pale_blue, bg = fade(P.darker_bg) },
+	Normal = { fg = P.fg, bg = P.bg },
+	NormalFloat = { fg = P.pale_blue, bg = P.bg },
 	Terminal = { fg = P.fg, bg = P.bg },
 	SignColumn = { link = "Normal" },
 	FoldColumn = { fg = P.fg_alt, bg = P.black },
-	VertSplit = { fg = P.darker_blue },
+	VertSplit = { fg = P.purple },
 	Folded = { fg = P.grey, bg = P.dark_alt },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
 	Visual = { bg = fade(P.visual, -60) },
 	VisualNOS = { link = "Visual" },
 	Search = { fg = P.base0, bg = fade(P.teal, -30) },
 	IncSearch = { link = "Search" },
-	CursorLine = { bg = fade(P.dark, -20) },
+	CursorLine = { bg = P.bg_highlight },
 	ColorColumn = { link = "CursorLine" },
 	Conceal = { fg = P.grey, bg = P.none },
 	Cursor = { fg = P.none, bg = P.none, reverse = true },
@@ -24,9 +24,9 @@ return {
 	lCursor = { fg = P.none, bg = P.none, reverse = true },
 	CursorIM = { fg = P.none, bg = P.none, reverse = true },
 	CursorColumn = { bg = P.dark_alt },
-	LineNr = { fg = P.base5 },
+	LineNr = { fg = P.fg_gutter },
 	qfLineNr = { fg = P.cyan },
-	CursorLineNr = { link = "LineNr" },
+	CursorLineNr = { fg = P.dark5 },
 	DiffAdd = { fg = P.black, bg = P.dark_green },
 	DiffChange = { fg = P.black, bg = P.yellow },
 	DiffDelete = { fg = P.black, bg = P.red },
@@ -36,7 +36,7 @@ return {
 	WarningMsg = { fg = P.dark_orange, bg = P.none, bold = true },
 	ModeMsg = { fg = P.fg, bg = P.none, bold = true },
 	MatchParen = { fg = P.none, bg = P.none },
-	NonText = { fg = P.base5 },
+	NonText = { link = "Comment" },
 	Whitespace = { fg = P.base4 },
 	SpecialKey = { fg = P.bg },
 	Pmenu = { fg = P.fg, bg = P.bg },
@@ -45,8 +45,8 @@ return {
 	PmenuSbar = { fg = P.none, bg = P.dark_grey },
 	PmenuThumb = { bg = P.darker_blue },
 	WildMenu = { fg = P.fg, bg = P.green },
-	StatusLine = { fg = P.base8, bg = P.base2 },
-	StatusLineNC = { fg = P.grey, bg = P.base2 },
+	StatusLine = { fg = P.base8, bg = P.bg_dark },
+	StatusLineNC = { fg = P.grey, bg = P.bg_dark },
 	Question = { fg = P.yellow },
 	Tabline = { fg = P.base6, bg = P.base2 },
 	TabLineSel = { bg = P.dark_alt },
@@ -59,7 +59,7 @@ return {
 	debugBreakpoint = { fg = P.bg, bg = P.red_alt },
 	-- Extra (Editor)
 	NormalNC = { fg = P.fg, bg = P.none },
-	MsgArea = { link = 'Normal' },
+	MsgArea = { link = "Normal" },
 	MsgSeparator = { fg = P.base6, bg = fade(P.bg) },
 	qfFileName = { fg = P.yellowgreen },
 	netrwDir = { fg = P.pink },
@@ -127,7 +127,7 @@ return {
 	TSFuncBuiltin = { fg = P.cyan },
 	TSField = { fg = P.dirty },
 
-	Winbar = { fg = P.base5 },
+	Winbar = { fg = P.comment },
 	WinbarCrumb = { fg = P.comment },
 	WinbarCurrent = { fg = P.comment },
 	WinbarDirectory = { fg = P.comment },
@@ -229,10 +229,10 @@ return {
 	TelescopePromptBorder = { link = "FloatBorder" },
 	TelescopePreviewBorder = { fg = P.blue },
 	TelescopeMatching = { fg = P.cyan },
-	TelescopeSelection = { fg = P.light_green },
-	TelescopeSelectionCaret = { fg = P.light_green },
+	TelescopeSelection = { bg = P.bg_highlight },
+	TelescopeSelectionCaret = { fg = P.cyan },
 	TelescopeMultiSelection = { fg = P.light_green },
-	TelescopePromptPrefix = { fg = P.light_green },
+	TelescopePromptPrefix = { fg = P.cyan },
 
 	FloatermBorder = { link = "FloatBorder" },
 
@@ -310,6 +310,9 @@ return {
 
 	CybuBorder = { link = "FloatBorder" },
 	CybuFocus = { bg = P.darker_blue, fg = P.base99 },
+
+	IndentBlanklineChar = { fg = P.fg_gutter, nocombine = true },
+	IndentBlanklineContextChar = { fg = P.purple, nocombine = true },
 
 	HarpoonBorder = { link = "FloatBorder" },
 
