@@ -308,9 +308,6 @@ return {
 	NotifyDEBUGIcon = { link = "DiagnosticHint" },
 	NotifyTRACEIcon = { link = "DiagnosticHint" },
 
-	CybuBorder = { link = "FloatBorder" },
-	CybuFocus = { bg = P.darker_blue, fg = P.base99 },
-
 	IndentBlanklineChar = { fg = P.fg_gutter, nocombine = true },
 	IndentBlanklineContextChar = { fg = P.purple, nocombine = true },
 
