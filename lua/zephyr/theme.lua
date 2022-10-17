@@ -116,14 +116,10 @@ return {
 
 	-- Plugins
 	-- Treesitter
-	TSFunction = { fg = P.blue },
-	TSComment = { fg = P.comment },
 	TSMethod = { fg = P.cyan },
 	TSProperty = { fg = P.yellow },
-	TSType = { fg = P.teal },
 	TSVariable = { fg = P.red_alt },
 	TSPunctBracket = { fg = P.bracket },
-	TSConstructor = { fg = P.teal },
 	TSFuncBuiltin = { fg = P.cyan },
 	TSField = { fg = P.dirty },
 
