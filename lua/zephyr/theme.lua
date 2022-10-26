@@ -172,14 +172,10 @@ return {
 	gitcommitArrow = { fg = P.grey },
 	gitcommitFile = { fg = P.dark_green },
 
-	GitGutterAdd = { fg = P.dark_green },
-	GitGutterChange = { fg = P.blue },
-	GitGutterDelete = { fg = P.red },
-	GitGutterChangeDelete = { fg = P.violet },
-
 	GitSignsAdd = { fg = P.dark_green },
 	GitSignsChange = { fg = P.blue },
 	GitSignsDelete = { fg = P.red },
+	GitSignsChangeDelete = { fg = P.violet },
 	GitSignsAddNr = { fg = P.dark_green },
 	GitSignsChangeNr = { fg = P.blue },
 	GitSignsDeleteNr = { fg = P.red },
