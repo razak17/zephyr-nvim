@@ -71,7 +71,7 @@ return {
 	FloatBorder = { link = "WinSeparator" },
 
 	-- Lang
-	Boolean = { fg = P.orange },
+	Boolean = { fg = P.cc2 },
 	Number = { fg = P.brown },
 	Float = { fg = P.brown },
 	-- PreProc = { fg = P.blue },
@@ -87,7 +87,7 @@ return {
 	Error = { fg = P.red },
 	StorageClass = { fg = P.orange },
 	Tag = { fg = P.orange },
-	Label = { fg = P.orange },
+	Label = { fg = P.blue },
 	Structure = { fg = P.orange },
 	Operator = { fg = P.light_gray },
 	Title = { fg = P.orange, bold = true },
