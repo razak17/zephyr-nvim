@@ -74,7 +74,7 @@ return {
 	Boolean = { fg = P.cc2 },
 	Number = { fg = P.brown },
 	Float = { fg = P.brown },
-	-- PreProc = { fg = P.blue },
+	PreProc = { fg = P.blue },
 	PreCondit = { fg = P.violet },
 	Include = { fg = P.violet },
 	Define = { fg = P.violet },
