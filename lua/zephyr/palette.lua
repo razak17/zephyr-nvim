@@ -11,7 +11,6 @@ return {
 	base77 = "#7e7e7e",
 	base88 = "#c8ccd4",
 	base99 = "#293238",
-	base00 = "#dedede",
 
 	-- bg = "#282a36",
 	bg = "#24283b",
