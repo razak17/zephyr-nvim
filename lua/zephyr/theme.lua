@@ -122,6 +122,9 @@ return {
 	TSPunctBracket = { fg = P.bracket },
 	TSFuncBuiltin = { fg = P.cc },
 	TSField = { fg = P.blue },
+	TSNamespace = { fg = P.red },
+	TSStorageClass = { fg = P.yellow },
+	TSConstructor = { fg = P.comment },
 
 	Winbar = { fg = P.comment },
 	WinbarCrumb = { fg = P.comment },
