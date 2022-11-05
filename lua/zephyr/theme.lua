@@ -71,7 +71,7 @@ return {
 	FloatBorder = { link = "WinSeparator" },
 
 	-- Lang
-	Boolean = { fg = P.cc2 },
+	Boolean = { fg = P.orange },
 	Number = { fg = P.brown },
 	Float = { fg = P.brown },
 	PreProc = { fg = P.blue },
