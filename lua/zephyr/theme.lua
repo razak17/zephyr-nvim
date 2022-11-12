@@ -100,7 +100,7 @@ return {
 	Constant = { fg = P.cyan },
 	Macro = { fg = P.cyan },
 	Identifier = { fg = P.blue },
-	Comment = { fg = P.comment },
+	Comment = { fg = P.comment, italic = true },
 	SpecialComment = { fg = P.comment },
 	Todo = { fg = P.orange, italic = true },
 	Delimiter = { fg = P.fg },
