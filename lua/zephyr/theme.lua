@@ -219,23 +219,6 @@ return {
 	vimUserFunc = { fg = P.yellow, bold = true },
 	vimFuncName = { fg = P.yellow, bold = true },
 
-	diffAdded = { fg = P.dark_green },
-	diffRemoved = { fg = P.red },
-	diffChanged = { fg = P.blue },
-	diffOldFile = { fg = P.yellow },
-	diffNewFile = { fg = P.orange },
-	diffFile = { fg = P.aqua },
-	diffLine = { fg = P.grey },
-	diffIndexLine = { fg = P.violet },
-	-- Exta
-	diffBDiffer = { link = "WarningMsg" },
-	diffCommon = { link = "WarningMsg" },
-	diffDiffer = { link = "WarningMsg" },
-	diffIdentical = { link = "WarningMsg" },
-	diffIsA = { link = "WarningMsg" },
-	diffNoEOL = { link = "WarningMsg" },
-	diffOnly = { link = "WarningMsg" },
-
 	gitcommitSummary = { fg = P.red },
 	gitcommitUntracked = { fg = P.grey },
 	gitcommitDiscarded = { fg = P.grey },
