@@ -36,6 +36,7 @@ return {
 	WarningMsg = { fg = P.dark_orange, bg = P.none, bold = true },
 	ModeMsg = { fg = P.fg, bg = P.none, bold = true },
 	MatchParen = { fg = P.none, bg = P.none, underline = true },
+	MatchWord = { fg = P.none, bg = P.none, underline = true },
 	NonText = { link = "Comment" },
 	Whitespace = { fg = P.base4 },
 	SpecialKey = { fg = P.bg },
