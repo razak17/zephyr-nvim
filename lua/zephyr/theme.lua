@@ -181,7 +181,7 @@ return {
 	["@namespace"] = { fg = P.cyan, bg = P.none },
 	["@symbol"] = { fg = P.fg, bg = P.none },
 	["@field"] = { fg = P.blue, bg = P.none },
-	["@property"] = { fg = P.red, bg = P.none },
+	["@property"] = { fg = P.light_gray, bg = P.none },
 	["@parameter"] = { fg = P.red, bg = P.none },
 	["@parameter.reference"] = { fg = P.red, bg = P.none },
 	["@attribute"] = { fg = P.red, bg = P.none },
