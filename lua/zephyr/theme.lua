@@ -189,6 +189,7 @@ return {
 	["@text.note"] = { fg = P.base0, bg = P.blue, bold = true },
 	["@text.warning"] = { fg = P.base0, bg = P.dark_orange, bold = true },
 	["@text.danger"] = { fg = P.base88, bg = fade(P.error_red, -10), bold = true },
+	["@text.title"] = { fg = P.light_gray, bg = none, bold = true },
 	["@tag.attribute"] = { fg = P.light_blue, bg = P.none },
 	["@error"] = { fg = P.error, bg = P.none },
 	["@warning"] = { fg = P.warn, bg = P.none },
