@@ -328,9 +328,9 @@ return {
 	WhichKeyDesc = { fg = P.dark_cyan },
 
 	-- nvim-cmp
-	CmpItemAbbrMatch = { fg = P.light_green },
+	CmpItemAbbrMatch = { fg = P.pink, bold = true },
 	CmpItemMenu = { fg = P.base5 },
-	Cmp = { fg = P.base5 },
+	Cmp = { fg = P.base7 },
 
 	-- nvim-notify
 	NotifyERRORTitle = { link = "DiagnosticError" },
