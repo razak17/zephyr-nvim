@@ -194,10 +194,10 @@ return {
 	["@math"] = { fg = P.yellow, bg = P.none },
 
 	-- Plugins
-	Winbar = { fg = P.comment },
-	WinbarCrumb = { fg = P.comment },
-	WinbarCurrent = { fg = P.comment },
-	WinbarDirectory = { fg = P.comment },
+	Winbar = { link = "VertSplit" },
+	WinbarCrumb = { link = "Winbar" },
+	WinbarCurrent = { link = "Winbar" },
+	WinbarDirectory = { fg = P.pink },
 
 	-- highlight FIXME comments
 	commentTSWarning = { bg = P.teal, fg = P.base0, bold = true },
