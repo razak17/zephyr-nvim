@@ -24,7 +24,7 @@ return {
 	iCursor = { fg = P.none, bg = P.none, reverse = true },
 	lCursor = { fg = P.none, bg = P.none, reverse = true },
 	CursorIM = { fg = P.none, bg = P.none, reverse = true },
-	LineNr = { fg = P.fg_gutter },
+	LineNr = { fg = P.comment },
 	qfLineNr = { fg = P.cyan },
 	CursorLineNr = { fg = P.dark5 },
 	DiffAdd = { fg = P.black, bg = P.dark_green },
@@ -194,10 +194,10 @@ return {
 	["@math"] = { fg = P.yellow, bg = P.none },
 
 	-- Plugins
-	Winbar = { link = "VertSplit" },
+	Winbar = { link = "LineNr" },
 	WinbarCrumb = { link = "Winbar" },
 	WinbarCurrent = { link = "Winbar" },
-	WinbarDirectory = { fg = P.pink },
+	WinbarDirectory = { fg = P.red },
 
 	-- highlight FIXME comments
 	commentTSWarning = { bg = P.teal, fg = P.base0, bold = true },
