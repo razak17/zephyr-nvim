@@ -29,11 +29,10 @@ end
 
 async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function()
 	P.terminal_color()
-	async_load_plugin:close()
 end))
 
 function P.colorscheme()
-  local theme = require("zephyr.theme")
+	local theme = require("zephyr.theme")
 
 	vim.api.nvim_command("hi clear")
 	if vim.fn.exists("syntax_on") then
