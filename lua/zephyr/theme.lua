@@ -26,7 +26,7 @@ return {
 	CursorIM = { fg = P.none, bg = P.none, reverse = true },
 	LineNr = { fg = P.comment },
 	qfLineNr = { fg = P.cyan },
-	CursorLineNr = { fg = P.purple },
+	CursorLineNr = { fg = P.purple, bold = true },
 	DiffAdd = { fg = P.black, bg = P.dark_green },
 	DiffChange = { fg = P.black, bg = P.yellow },
 	DiffDelete = { fg = P.black, bg = P.red },
