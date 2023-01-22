@@ -356,7 +356,6 @@ return {
 
 	Dim = { fg = P.base5 },
 	UfoFoldedEllipsis = { fg = P.base5 },
-	SLCopilot = { fg = P.forest_green },
 
 	IlluminatedWordText = { bg = P.base4, underline = false },
 	IlluminatedWordRead = { bg = P.base4, underline = false },
