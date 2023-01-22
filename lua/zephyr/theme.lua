@@ -4,7 +4,7 @@ local fade = require("zephyr.utils").fade
 return {
 	-- Editor
 	Normal = { fg = P.fg, bg = P.bg },
-	NormalFloat = { fg = P.pale_blue, bg = P.bg },
+	NormalFloat = { link = "Normal" },
 	Terminal = { fg = P.fg, bg = P.bg },
 	SignColumn = { link = "Normal" },
 	CursorColumn = { link = "Normal" },
@@ -38,6 +38,7 @@ return {
 	MatchParen = { fg = P.none, bg = P.none, underline = true },
 	MatchWord = { fg = P.none, bg = P.none, underline = true },
 	NonText = { link = "Comment" },
+	Dim = { fg = P.base5 },
 	Whitespace = { fg = P.base4 },
 	SpecialKey = { fg = P.bg },
 	Pmenu = { fg = P.fg, bg = P.bg },
@@ -58,6 +59,7 @@ return {
 	QuickFixLine = { fg = P.black },
 	Debug = { fg = P.orange },
 	debugBreakpoint = { fg = P.bg, bg = P.pale_red },
+
 	-- Extra (Editor)
 	NormalNC = { fg = P.fg, bg = P.none },
 	MsgArea = { link = "Normal" },
@@ -70,7 +72,7 @@ return {
 	PanelDarkBackground = { link = "PanelBackground" },
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
-	FloatTitle = { fg = P.base8, bg = P.purple },
+	FloatTitle = { fg = P.light_gray, bg = P.purple },
 
 	-- Lang
 	Boolean = { fg = P.orange },
@@ -114,6 +116,17 @@ return {
 	Method = { fg = P.green },
 	Class = { fg = P.blue },
 	JsonFold = { fg = P.comment },
+
+	-- Vim
+	vimCommentTitle = { fg = P.grey, bold = true },
+	vimLet = { fg = P.orange },
+	vimVar = { fg = P.cyan },
+	vimFunction = { fg = P.redwine },
+	vimIsCommand = { fg = P.fg },
+	vimCommand = { fg = P.blue },
+	vimNotFunc = { fg = P.violet, bold = true },
+	vimUserFunc = { fg = P.yellow, bold = true },
+	vimFuncName = { fg = P.yellow, bold = true },
 
 	-- Treesitter
 	["@comment"] = { link = "Comment" },
@@ -172,8 +185,8 @@ return {
 	["@annotation"] = { fg = P.cyan, bg = P.none },
 	["@namespace"] = { fg = P.cyan, bg = P.none },
 	["@symbol"] = { fg = P.fg, bg = P.none },
-	["@field"] = { fg = P.pale_red, bg = P.none },
-	["@property"] = { fg = P.pale_red, bg = P.none },
+	["@field"] = { fg = P.light_gray, bg = P.none },
+	["@property"] = { fg = P.light_gray, bg = P.none },
 	["@parameter"] = { fg = P.red, bg = P.none },
 	["@parameter.reference"] = { fg = P.red, bg = P.none },
 	["@attribute"] = { fg = P.red, bg = P.none },
@@ -186,6 +199,18 @@ return {
 	["@math"] = { fg = P.yellow, bg = P.none },
 
 	-- Plugins
+
+	-- git
+	gitcommitSummary = { fg = P.red },
+	gitcommitUntracked = { fg = P.grey },
+	gitcommitDiscarded = { fg = P.grey },
+	gitcommitSelected = { fg = P.grey },
+	gitcommitUnmerged = { fg = P.grey },
+	gitcommitOnBranch = { fg = P.grey },
+	gitcommitArrow = { fg = P.grey },
+	gitcommitFile = { fg = P.dark_green },
+
+	-- winbar
 	Winbar = { link = "LineNr" },
 	WinbarCrumb = { link = "Winbar" },
 	WinbarCurrent = { link = "Winbar" },
@@ -199,25 +224,7 @@ return {
 	CommentTasksFixme = { link = "commentTSDanger" },
 	CommentTasksNote = { link = "commentTSNote" },
 
-	vimCommentTitle = { fg = P.grey, bold = true },
-	vimLet = { fg = P.orange },
-	vimVar = { fg = P.cyan },
-	vimFunction = { fg = P.redwine },
-	vimIsCommand = { fg = P.fg },
-	vimCommand = { fg = P.blue },
-	vimNotFunc = { fg = P.violet, bold = true },
-	vimUserFunc = { fg = P.yellow, bold = true },
-	vimFuncName = { fg = P.yellow, bold = true },
-
-	gitcommitSummary = { fg = P.red },
-	gitcommitUntracked = { fg = P.grey },
-	gitcommitDiscarded = { fg = P.grey },
-	gitcommitSelected = { fg = P.grey },
-	gitcommitUnmerged = { fg = P.grey },
-	gitcommitOnBranch = { fg = P.grey },
-	gitcommitArrow = { fg = P.grey },
-	gitcommitFile = { fg = P.dark_green },
-
+  -- gitsigns
 	GitSignsAdd = { fg = P.dark_green },
 	GitSignsChange = { fg = P.blue },
 	GitSignsDelete = { fg = P.red },
@@ -229,12 +236,7 @@ return {
 	GitSignsChangeLn = { bg = P.bg_highlight },
 	GitSignsDeleteLn = { bg = P.bg },
 
-	SignifySignAdd = { fg = P.dark_green },
-	SignifySignChange = { fg = P.blue },
-	SignifySignDelete = { fg = P.red },
-
-	dbui_tables = { fg = P.blue },
-
+  -- trouble
 	TroubleCount = { bg = P.dark_alt, fg = P.pink },
 	TroubleFile = { fg = P.blue, bold = true },
 	TroubleTextError = { fg = P.red },
@@ -242,15 +244,13 @@ return {
 	TroubleTextInformation = { fg = P.blue },
 	TroubleTextHint = { fg = P.teal },
 
+  -- nvim-bqf
 	BqfPreviewBorder = { link = "FloatBorder" },
 	BqfSign = { fg = P.red },
 	BqfPreviewRange = { fg = P.cyan },
 	BqfPreviewCursor = { fg = P.yellowgreen },
 
-	CursorWord0 = { bg = P.cursor_bg },
-	CursorWord1 = { bg = P.none },
-	CursorWord = { bg = P.none },
-
+  -- neo-tree
 	NeoTreeGitAdded = { fg = P.sign_add },
 	NeoTreeGitConflict = { fg = P.sign_delete },
 	NeoTreeGitDeleted = { fg = P.sign_delete },
@@ -258,10 +258,9 @@ return {
 	NeoTreeGitModified = { fg = P.sign_change },
 	NeoTreeGitUntracked = { fg = P.sign_add },
 	NeoTreeHiddenByName = { fg = P.base5 },
-	NeoTreeFloatTitle = { fg = P.base5 },
-	-- NeoTreeCursorLine = { bg = P.dark },
-	-- NeoTreeTitleBar = { link = "Visual", bold = true },
+	NeoTreeFloatTitle = { fg = P.base5, bg = P.red },
 
+  -- telescope
 	TelescopeNormal = { fg = P.fg },
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeResultsBorder = { link = "FloatBorder" },
@@ -272,9 +271,10 @@ return {
 	TelescopeSelectionCaret = { fg = P.cyan },
 	TelescopeMultiSelection = { fg = P.light_green },
 	TelescopePromptPrefix = { fg = P.cyan },
+	TelescopePromptTitle = { fg = P.light_gray },
+	TelescopePreviewTitle = { fg = P.light_gray },
 
-	FloatermBorder = { link = "FloatBorder" },
-
+  -- LSP
 	DiagnosticError = { fg = P.error_red },
 	DiagnosticWarn = { fg = P.dark_orange },
 	DiagnosticInfo = { fg = P.blue },
@@ -347,18 +347,16 @@ return {
 	NotifyDEBUGIcon = { link = "DiagnosticHint" },
 	NotifyTRACEIcon = { link = "DiagnosticHint" },
 
+  -- indent-blankline
 	IndentBlanklineChar = { fg = P.fg_gutter, nocombine = true },
 	IndentBlanklineContextChar = { fg = P.purple, nocombine = true },
 
-	HarpoonBorder = { link = "FloatBorder" },
-
+  -- DAP
 	DapBreakpoint = { link = "DiagnosticError" },
 	DapBreakpointRejected = { link = "DiagnosticWarn" },
 	DapStopped = { link = "DiagnosticHint" },
 
-	Dim = { fg = P.base5 },
-	UfoFoldedEllipsis = { fg = P.base5 },
-
+  -- vim-illuminate
 	IlluminatedWordText = { bg = P.base4, underline = false },
 	IlluminatedWordRead = { bg = P.base4, underline = false },
 	IlluminatedWordWrite = { bg = P.base4, underline = false },
