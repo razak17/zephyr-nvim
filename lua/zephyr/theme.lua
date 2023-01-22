@@ -70,6 +70,7 @@ return {
 	PanelDarkBackground = { link = "PanelBackground" },
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
+	FloatTitle = { fg = P.base8, bg = P.purple },
 
 	-- Lang
 	Boolean = { fg = P.orange },
@@ -257,6 +258,7 @@ return {
 	NeoTreeGitModified = { fg = P.sign_change },
 	NeoTreeGitUntracked = { fg = P.sign_add },
 	NeoTreeHiddenByName = { fg = P.base5 },
+	NeoTreeFloatTitle = { fg = P.base5 },
 	-- NeoTreeCursorLine = { bg = P.dark },
 	-- NeoTreeTitleBar = { link = "Visual", bold = true },
 
@@ -266,7 +268,7 @@ return {
 	TelescopePromptBorder = { link = "FloatBorder" },
 	TelescopePreviewBorder = { fg = P.blue },
 	TelescopeMatching = { fg = P.cyan },
-	TelescopeSelection = { bg = P.bg_highlight },
+	TelescopeSelection = { link = "CursorLine" },
 	TelescopeSelectionCaret = { fg = P.cyan },
 	TelescopeMultiSelection = { fg = P.light_green },
 	TelescopePromptPrefix = { fg = P.cyan },
