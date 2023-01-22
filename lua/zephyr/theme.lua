@@ -115,15 +115,6 @@ return {
 	JsonFold = { fg = P.comment },
 
 	-- Treesitter
-	TSMethod = { fg = P.cyan },
-	TSProperty = { fg = P.yellow },
-	TSVariable = { link = "Variable" },
-	TSPunctBracket = { link = "Delimiter" },
-	TSFuncBuiltin = { link = "Function" },
-	TSField = { link = "Field" },
-	TSNamespace = { fg = P.black },
-	TSStorageClass = { link = "StorageClass" },
-	TSConstructor = { link = "Type" },
 	["@comment"] = { link = "Comment" },
 	["@variable"] = { link = "Variable" },
 	["@string"] = { link = "String" },
