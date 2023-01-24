@@ -211,7 +211,7 @@ return {
 	gitcommitFile = { fg = P.dark_green },
 
 	-- winbar
-	Winbar = { link = "LineNr" },
+	Winbar = { fg = P.light_gray },
 	WinbarCrumb = { link = "Winbar" },
 	WinbarCurrent = { link = "Winbar" },
 	WinbarDirectory = { fg = P.red },
@@ -224,7 +224,7 @@ return {
 	CommentTasksFixme = { link = "commentTSDanger" },
 	CommentTasksNote = { link = "commentTSNote" },
 
-  -- gitsigns
+	-- gitsigns
 	GitSignsAdd = { fg = P.dark_green },
 	GitSignsChange = { fg = P.blue },
 	GitSignsDelete = { fg = P.red },
@@ -236,7 +236,7 @@ return {
 	GitSignsChangeLn = { bg = P.bg_highlight },
 	GitSignsDeleteLn = { bg = P.bg },
 
-  -- trouble
+	-- trouble
 	TroubleCount = { bg = P.dark_alt, fg = P.pink },
 	TroubleFile = { fg = P.blue, bold = true },
 	TroubleTextError = { fg = P.red },
@@ -244,13 +244,13 @@ return {
 	TroubleTextInformation = { fg = P.blue },
 	TroubleTextHint = { fg = P.teal },
 
-  -- nvim-bqf
+	-- nvim-bqf
 	BqfPreviewBorder = { link = "FloatBorder" },
 	BqfSign = { fg = P.red },
 	BqfPreviewRange = { fg = P.cyan },
 	BqfPreviewCursor = { fg = P.yellowgreen },
 
-  -- neo-tree
+	-- neo-tree
 	NeoTreeGitAdded = { fg = P.sign_add },
 	NeoTreeGitConflict = { fg = P.sign_delete },
 	NeoTreeGitDeleted = { fg = P.sign_delete },
@@ -260,7 +260,7 @@ return {
 	NeoTreeHiddenByName = { fg = P.base5 },
 	NeoTreeFloatTitle = { fg = P.base5, bg = P.red },
 
-  -- telescope
+	-- telescope
 	TelescopeNormal = { fg = P.fg },
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeResultsBorder = { link = "FloatBorder" },
@@ -274,7 +274,7 @@ return {
 	TelescopePromptTitle = { fg = P.light_gray },
 	TelescopePreviewTitle = { fg = P.light_gray },
 
-  -- LSP
+	-- LSP
 	DiagnosticError = { fg = P.error_red },
 	DiagnosticWarn = { fg = P.dark_orange },
 	DiagnosticInfo = { fg = P.blue },
@@ -347,16 +347,16 @@ return {
 	NotifyDEBUGIcon = { link = "DiagnosticHint" },
 	NotifyTRACEIcon = { link = "DiagnosticHint" },
 
-  -- indent-blankline
+	-- indent-blankline
 	IndentBlanklineChar = { fg = P.fg_gutter, nocombine = true },
 	IndentBlanklineContextChar = { fg = P.purple, nocombine = true },
 
-  -- DAP
+	-- DAP
 	DapBreakpoint = { link = "DiagnosticError" },
 	DapBreakpointRejected = { link = "DiagnosticWarn" },
 	DapStopped = { link = "DiagnosticHint" },
 
-  -- vim-illuminate
+	-- vim-illuminate
 	IlluminatedWordText = { bg = P.base4, underline = false },
 	IlluminatedWordRead = { bg = P.base4, underline = false },
 	IlluminatedWordWrite = { bg = P.base4, underline = false },
