@@ -259,6 +259,7 @@ return {
 	NeoTreeGitUntracked = { fg = P.sign_add },
 	NeoTreeHiddenByName = { fg = P.base5 },
 	NeoTreeTitleBar = { link = "FloatTitle" },
+	NeoTreeIndentMarker = { link = "Dim" },
 
 	-- telescope
 	TelescopeNormal = { fg = P.fg },
