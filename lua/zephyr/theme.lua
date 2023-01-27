@@ -72,7 +72,7 @@ return {
 	PanelDarkBackground = { link = "PanelBackground" },
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
-	FloatTitle = { fg = P.light_gray, bg = P.purple },
+	FloatTitle = { fg = P.light_gray, bg = fade(P.purple, -60) },
 
 	-- Lang
 	Boolean = { fg = P.orange },
@@ -258,7 +258,7 @@ return {
 	NeoTreeGitModified = { fg = P.sign_change },
 	NeoTreeGitUntracked = { fg = P.sign_add },
 	NeoTreeHiddenByName = { fg = P.base5 },
-	NeoTreeFloatTitle = { fg = P.base5, bg = P.red },
+	NeoTreeTitleBar = { link = "FloatTitle" },
 
 	-- telescope
 	TelescopeNormal = { fg = P.fg },
