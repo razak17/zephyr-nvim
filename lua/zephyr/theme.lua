@@ -225,7 +225,7 @@ return {
 	CommentTasksNote = { link = "commentTSNote" },
 
 	-- gitsigns
-	GitSignsAdd = { fg = P.dark_green },
+	GitSignsAdd = { fg = P.chartreuse },
 	GitSignsChange = { fg = P.blue },
 	GitSignsDelete = { fg = P.red },
 	GitSignsChangeDelete = { fg = P.violet },
