@@ -72,7 +72,7 @@ return {
 	PanelDarkBackground = { link = "PanelBackground" },
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
-	FloatTitle = { fg = P.light_gray, bg = fade(P.purple, -60) },
+	FloatTitle = { fg = P.base0, bg = P.purple },
 
 	-- Lang
 	Boolean = { fg = P.orange },
