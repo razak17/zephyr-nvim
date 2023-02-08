@@ -273,6 +273,7 @@ return {
 	TelescopeMultiSelection = { fg = P.light_green },
 	TelescopePromptPrefix = { fg = P.cyan },
 	TelescopePromptTitle = { fg = P.light_gray },
+	TelescopePromptCounter = { fg = P.purple },
 	TelescopePreviewTitle = { fg = P.light_gray },
 
 	-- LSP
