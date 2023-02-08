@@ -2,7 +2,9 @@ local P = require("zephyr.palette")
 local fade = require("zephyr.utils").fade
 
 return {
+	--------------------------------------------------------------------------------------------------
 	-- Editor
+	--------------------------------------------------------------------------------------------------
 	Normal = { fg = P.fg, bg = fade(P.bg, -40) },
 	NormalFloat = { link = "Normal" },
 	Terminal = { fg = P.fg, bg = P.bg },
@@ -58,9 +60,10 @@ return {
 	SpellRare = { fg = P.none, bg = P.none, undercurl = true },
 	QuickFixLine = { fg = P.black },
 	Debug = { fg = P.orange },
-	debugBreakpoint = { fg = P.bg, bg = P.pale_red },
 
+	--------------------------------------------------------------------------------------------------
 	-- Extra (Editor)
+	--------------------------------------------------------------------------------------------------
 	NormalNC = { fg = P.fg, bg = P.none },
 	MsgArea = { link = "Normal" },
 	MsgSeparator = { fg = P.base6, bg = fade(P.bg) },
@@ -68,13 +71,13 @@ return {
 	netrwDir = { fg = P.pink },
 	TabLineFill = { bg = P.bg },
 	WinSeparator = { link = "VertSplit" },
-	PanelBackground = { link = "Normal" },
-	PanelDarkBackground = { link = "PanelBackground" },
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
 	FloatTitle = { fg = P.base0, bg = P.purple },
 
+	--------------------------------------------------------------------------------------------------
 	-- Lang
+	--------------------------------------------------------------------------------------------------
 	Boolean = { fg = P.orange },
 	Number = { fg = P.brown },
 	Float = { fg = P.brown },
@@ -117,18 +120,9 @@ return {
 	Class = { fg = P.blue },
 	JsonFold = { fg = P.comment },
 
-	-- Vim
-	vimCommentTitle = { fg = P.grey, bold = true },
-	vimLet = { fg = P.orange },
-	vimVar = { fg = P.cyan },
-	vimFunction = { fg = P.redwine },
-	vimIsCommand = { fg = P.fg },
-	vimCommand = { fg = P.blue },
-	vimNotFunc = { fg = P.violet, bold = true },
-	vimUserFunc = { fg = P.yellow, bold = true },
-	vimFuncName = { fg = P.yellow, bold = true },
-
+	--------------------------------------------------------------------------------------------------
 	-- Treesitter
+	--------------------------------------------------------------------------------------------------
 	["@comment"] = { link = "Comment" },
 	["@variable"] = { link = "Variable" },
 	["@string"] = { link = "String" },
@@ -198,7 +192,9 @@ return {
 	["@uri"] = { fg = P.cyan, bg = P.none, underline = true },
 	["@math"] = { fg = P.yellow, bg = P.none },
 
+	--------------------------------------------------------------------------------------------------
 	-- Plugins
+	--------------------------------------------------------------------------------------------------
 
 	-- git
 	gitcommitSummary = { fg = P.red },
@@ -272,8 +268,9 @@ return {
 	TelescopeSelectionCaret = { fg = P.cyan },
 	TelescopeMultiSelection = { fg = P.light_green },
 	TelescopePromptPrefix = { fg = P.cyan },
-	TelescopePromptTitle = { fg = P.light_gray },
 	TelescopePromptCounter = { fg = P.purple },
+	TelescopeResultsTitle = { fg = P.light_gray },
+	TelescopePromptTitle = { fg = P.light_gray },
 	TelescopePreviewTitle = { fg = P.light_gray },
 
 	-- LSP
