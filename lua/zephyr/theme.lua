@@ -47,7 +47,7 @@ return {
 	PmenuSel = { fg = P.base0, bg = P.blue },
 	PmenuSelBold = { fg = P.base0, bg = P.blue },
 	PmenuSbar = { fg = P.none, bg = P.dark_grey },
-	PmenuThumb = { bg = P.darker_blue },
+	PmenuThumb = { bg = P.purple },
 	WildMenu = { fg = P.fg, bg = P.green },
 	StatusLine = { fg = P.base8, bg = P.bg_dark },
 	StatusLineNC = { fg = P.grey, bg = P.bg_dark },
