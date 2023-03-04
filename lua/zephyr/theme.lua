@@ -192,6 +192,37 @@ return {
 	["@uri"] = { fg = P.cyan, bg = P.none, underline = true },
 	["@math"] = { fg = P.yellow, bg = P.none },
 
+	-- LSP
+	DiagnosticError = { fg = P.error_red },
+	DiagnosticWarn = { fg = P.dark_orange },
+	DiagnosticInfo = { fg = P.blue },
+	DiagnosticHint = { fg = P.darker_green },
+
+	LspReferenceRead = { bg = P.base4 },
+	LspReferenceText = { bg = P.base4 },
+	LspReferenceWrite = { bg = P.base4 },
+
+	-- nvim v0.6.0+
+	DiagnosticSignError = { link = "DiagnosticError" },
+	DiagnosticSignWarn = { link = "DiagnosticWarn" },
+	DiagnosticSignInfo = { link = "DiagnosticInfo" },
+	DiagnosticSignHint = { link = "DiagnosticHint" },
+
+	DiagnosticFloatingError = { link = "DiagnosticError" },
+	DiagnosticFloatingWarn = { link = "DiagnosticWarn" },
+	DiagnosticFloatingInfo = { link = "DiagnosticInfo" },
+	DiagnosticFloatingHint = { link = "DiagnosticHint" },
+
+	DiagnosticUnderlineError = { undercurl = true, sp = P.error_red },
+	DiagnosticUnderlineWarn = { undercurl = true, sp = P.dark_orange },
+	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
+	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
+
+	DiagnosticVirtualTextError = { fg = P.error_red, bg = fade(P.pale_red, -70) },
+	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = fade(P.dark_orange, -70) },
+	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = fade(P.pale_blue, -70) },
+	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = fade(P.darker_green, -70) },
+
 	--------------------------------------------------------------------------------------------------
 	-- Plugins
 	--------------------------------------------------------------------------------------------------
@@ -272,37 +303,6 @@ return {
 	TelescopeResultsTitle = { fg = P.light_gray },
 	TelescopePromptTitle = { fg = P.light_gray },
 	TelescopePreviewTitle = { fg = P.light_gray },
-
-	-- LSP
-	DiagnosticError = { fg = P.error_red },
-	DiagnosticWarn = { fg = P.dark_orange },
-	DiagnosticInfo = { fg = P.blue },
-	DiagnosticHint = { fg = P.darker_green },
-
-	LspReferenceRead = { bg = P.base4 },
-	LspReferenceText = { bg = P.base4 },
-	LspReferenceWrite = { bg = P.base4 },
-
-	-- nvim v0.6.0+
-	DiagnosticSignError = { link = "DiagnosticError" },
-	DiagnosticSignWarn = { link = "DiagnosticWarn" },
-	DiagnosticSignInfo = { link = "DiagnosticInfo" },
-	DiagnosticSignHint = { link = "DiagnosticHint" },
-
-	DiagnosticFloatingError = { link = "DiagnosticError" },
-	DiagnosticFloatingWarn = { link = "DiagnosticWarn" },
-	DiagnosticFloatingInfo = { link = "DiagnosticInfo" },
-	DiagnosticFloatingHint = { link = "DiagnosticHint" },
-
-	DiagnosticUnderlineError = { undercurl = true, sp = P.error_red },
-	DiagnosticUnderlineWarn = { undercurl = true, sp = P.dark_orange },
-	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
-	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
-
-	DiagnosticVirtualTextError = { fg = P.error_red, bg = fade(P.pale_red, -70) },
-	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = fade(P.dark_orange, -70) },
-	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = fade(P.pale_blue, -70) },
-	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = fade(P.darker_green, -70) },
 
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
