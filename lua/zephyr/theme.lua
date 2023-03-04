@@ -312,8 +312,6 @@ return {
 
 	-- which-key
 	WhichKey = { fg = P.pink },
-	WhichKeyName = { fg = P.yellow },
-	WhichKeyTrigger = { fg = P.black },
 	WhichKeySeparator = { fg = P.yellowgreen },
 	WhichKeyFloat = { link = "Normal" },
 	WhichKeyGroup = { fg = P.pale_blue },
