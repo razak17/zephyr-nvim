@@ -314,7 +314,7 @@ return {
 	WhichKey = { fg = P.pink },
 	WhichKeyName = { fg = P.yellow },
 	WhichKeyTrigger = { fg = P.black },
-	WhichKeySeperator = { fg = P.yellowgreen },
+	WhichKeySeparator = { fg = P.yellowgreen },
 	WhichKeyFloat = { link = "Normal" },
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
