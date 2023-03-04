@@ -312,7 +312,7 @@ return {
 
 	-- which-key
 	WhichKey = { fg = P.pink },
-	WhichKeySeparator = { fg = P.yellowgreen },
+	WhichKeySeparator = { fg = fade(P.cyan, -20) },
 	WhichKeyFloat = { link = "Normal" },
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
