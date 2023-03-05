@@ -323,6 +323,9 @@ return {
 	-- nvim-cmp
 	NullLsInfoBorder = { link = "FloatBorder" },
 
+	-- nvim-lspconfig
+	LspInfoBorder = { link = "FloatBorder" },
+
 	-- nvim-notify
 	NotifyERRORTitle = { link = "DiagnosticError" },
 	NotifyWARNTitle = { link = "DiagnosticWarn" },
