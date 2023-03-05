@@ -320,6 +320,9 @@ return {
 	-- nvim-cmp
 	CmpItemAbbrMatch = { fg = P.purple, bold = true },
 
+	-- nvim-cmp
+	NullLsInfoBorder = { link = "FloatBorder" },
+
 	-- nvim-notify
 	NotifyERRORTitle = { link = "DiagnosticError" },
 	NotifyWARNTitle = { link = "DiagnosticWarn" },
