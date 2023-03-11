@@ -42,7 +42,9 @@ function P.colorscheme()
 	vim.o.termguicolors = true
 	vim.g.colors_name = "zephyr"
 	set_hl(theme)
-	async_load_plugin:send()
+	if async_load_plugin then
+		async_load_plugin:send()
+	end
 end
 
 P.colorscheme()

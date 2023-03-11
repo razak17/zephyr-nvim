@@ -14,6 +14,7 @@ return {
 
 	none = "NONE",
 	bg = "#24283b",
+  bg1 = "#504945",
 	bg_dark = "#1f2335",
 	fg = "#bbc2cf",
 	fg_alt = "#5B6268",
@@ -41,6 +42,7 @@ return {
 	pink = "#c678dd",
 	pale_pink = "#b490c0",
 	salmon = "#C678DD",
+	visual = "#9745be",
 
 	orange = "#D98E48",
 	dark_orange = "#ff8800",
@@ -56,8 +58,8 @@ return {
 	green = "#89ca78",
 	light_green = "#abcf84",
 	darker_green = "#98c379",
-  dark_green = "#98be65",
-  chartreuse = "#1DC123",
+	dark_green = "#98be65",
+	chartreuse = "#1DC123",
 	forest_green = "#6CC644",
 
 	cyan = "#A5D6FF",
@@ -68,6 +70,7 @@ return {
 	brighter_blue = "#9cd0fa",
 	darker_blue = "#7685b1",
 	teal = "#15aabf",
+	bracket = "#80a0c2",
 
 	grey = "#928374",
 	dark_grey = "#3E4556",
